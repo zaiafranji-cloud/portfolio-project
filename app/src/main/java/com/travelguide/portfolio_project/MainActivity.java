@@ -20,5 +20,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        findViewById(R.id.btnAbout).setOnClickListener(v -> {
+            startActivity(new android.content.Intent(MainActivity.this, AboutActivity.class));
+        });
     }
 }
